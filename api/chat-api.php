@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 
 // Load config for Vercel
-require_once '../includes/config.php';
+require_once __DIR__ . '/../includes/config.php';
 
 // Only allow POST requests
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -43,6 +43,7 @@ $reply = getAIReply($message, $userName);
 
 echo json_encode(['success' => true, 'reply' => $reply]);
 ?>
+
 
 
 

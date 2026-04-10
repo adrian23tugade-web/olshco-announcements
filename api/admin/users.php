@@ -1,5 +1,5 @@
 <?php
-require_once '../../includes/config.php';
+require_once __DIR__ . '/../../includes/config.php';
 
 // Require login and admin access
 if (!isLoggedIn()) {
@@ -786,6 +786,7 @@ $pageTitle = 'Manage Users';
     </script>
 </body>
 </html>
+
 
 
 

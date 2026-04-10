@@ -1,5 +1,5 @@
 <?php
-require_once '../../includes/config.php';
+require_once __DIR__ . '/../../includes/config.php';
 
 // Require login and admin/staff access
 if (!isLoggedIn()) {
@@ -31,6 +31,7 @@ if ($id) {
 header('Location: announcements.php?msg=Announcement+deleted+successfully');
 exit;
 ?>
+
 
 
 

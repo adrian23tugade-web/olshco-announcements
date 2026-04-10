@@ -1,5 +1,5 @@
 <?php
-require_once '../includes/config.php';
+require_once __DIR__ . '/../includes/config.php';
 
 echo "<h1>Admin Account Setup</h1>";
 
@@ -26,6 +26,7 @@ echo "</div>";
 
 echo "<a href='/login' style='background: #800000; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;'>Go to Login</a>";
 ?>
+
 
 
 

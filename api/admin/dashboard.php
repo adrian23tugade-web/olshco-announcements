@@ -1,5 +1,5 @@
 <?php
-require_once '../../includes/config.php';
+require_once __DIR__ . '/../../includes/config.php';
 
 // Require login and admin/staff access
 if (!isLoggedIn()) {
@@ -739,6 +739,7 @@ $pageTitle = 'Admin Dashboard';
     <script src="../../assets/js/script.js"></script>
 </body>
 </html>
+
 
 
 

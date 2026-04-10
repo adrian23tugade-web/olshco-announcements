@@ -1,6 +1,6 @@
 <?php
-require_once '../includes/config.php';
-require_once '../includes/header.php';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/header.php';
 
 // Require login - redirect to login if not logged in
 if (!isLoggedIn()) {
@@ -351,8 +351,9 @@ if (!$totalEvents) $totalEvents = 0;
     </div>
 </div>
 
-<?php require_once '../includes/chatbot.php'; ?>
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once __DIR__ . '/../includes/chatbot.php'; ?>
+<?php require_once __DIR__ . '/../includes/footer.php'; ?>
+
 
 
 
