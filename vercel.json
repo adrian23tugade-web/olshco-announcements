@@ -1,0 +1,23 @@
+{
+  "functions": {
+    "api/**/*.php": {
+      "runtime": "vercel-php@0.9.0"
+    },
+    "api/*.php": {
+      "runtime": "vercel-php@0.9.0"
+    }
+  },
+  "rewrites": [
+    { "source": "/assets/(.*)", "destination": "/assets/$1" },
+    { "source": "/", "destination": "/api/index.php" },
+    { "source": "/login", "destination": "/api/login.php" },
+    { "source": "/register", "destination": "/api/register.php" },
+    { "source": "/dashboard", "destination": "/api/dashboard.php" },
+    { "source": "/profile", "destination": "/api/profile.php" },
+    { "source": "/logout", "destination": "/api/logout.php" },
+    { "source": "/chat-api", "destination": "/api/chat-api.php" },
+    { "source": "/admin", "destination": "/api/admin/dashboard.php" },
+    { "source": "/admin/(.*)", "destination": "/api/admin/$1" },
+    { "source": "/(.*)\\.php", "destination": "/api/$1.php" }
+  ]
+}
